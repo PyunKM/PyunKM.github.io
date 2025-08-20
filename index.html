@@ -2,7 +2,9 @@
 <html>
 <head>
     <title>편경민 감정평가사 홈페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* 모든 기기에 공통으로 적용되는 기본 디자인 */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -37,6 +39,24 @@
             margin-top: 20px;
             margin-bottom: 10px;
             font-size: 1.2em;
+        }
+
+        /* 스마트폰처럼 작은 화면에서만 적용되는 디자인 */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                width: 100%;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .section-title {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
