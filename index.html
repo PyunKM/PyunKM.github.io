@@ -4,90 +4,96 @@
     <title>편경민 감정평가사 홈페이지</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* 모든 기기에 공통으로 적용되는 기본 디자인 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
             text-align: center;
-            padding: 50px;
-            background-color: #f0f0f0;
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
             background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ddd;
         }
         h1 {
-            color: #333;
+            margin-top: 10px;
+            font-size: 2em;
         }
-        p {
-            color: #666;
-            line-height: 1.5;
-        }
-        ul {
+        .contact-info {
             list-style: none;
             padding: 0;
         }
-        li {
-            margin-bottom: 10px;
+        .contact-info li {
+            margin: 5px 0;
         }
         .section-title {
-            font-weight: bold;
-            color: #555;
-            margin-top: 20px;
+            color: #4CAF50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
             margin-bottom: 10px;
-            font-size: 1.2em;
+            font-weight: bold;
         }
-
-        /* 스마트폰처럼 작은 화면에서만 적용되는 디자인 */
         @media screen and (max-width: 600px) {
-            body {
-                padding: 20px;
-            }
             .container {
-                width: 100%;
-                border-radius: 0;
-                box-shadow: none;
+                width: 90%;
+            }
+            .profile-photo {
+                width: 120px;
+                height: 120px;
             }
             h1 {
-                font-size: 1.8em;
-            }
-            .section-title {
-                font-size: 1em;
+                font-size: 1.5em;
             }
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <h1>해길 감정평가사무소</h1>
+    </div>
     <div class="container">
+        <img src="your-photo-filename.jpg" alt="프로필 사진" class="profile-photo">
         <h1>편경민 감정평가사</h1>
         <p><strong>대표자</strong></p>
-        <p><strong>소속:</strong> 해길 감정평가사무소</p>
+        <p>상속/증여, 경매, 소송 등 다양한 감정평가 업무를 수행합니다.</p>
         <hr>
-        <p class="section-title">연락처</p>
-        <ul>
+        <h2 class="section-title">연락처</h2>
+        <ul class="contact-info">
             <li><strong>전화:</strong> 010 3219 7794</li>
             <li><strong>이메일:</strong> blackbean00@naver.com</li>
             <li><strong>팩스:</strong> 0504-280-7794</li>
         </ul>
-        <hr>
-        <p class="section-title">주요 활동</p>
-        <ul>
+        <h2 class="section-title">주요 활동</h2>
+        <ul class="contact-info">
             <li>(전) 서울지방국세청 평가심의회 위원</li>
             <li>(전) 동작구 부동산평가위원회 위원</li>
             <li>(전) 동작구 민원조정위원회 위원</li>
             <li>(전) 용산구 공유재산평가심의위원회 위원</li>
         </ul>
-        <hr>
-        <p class="section-title">자격증</p>
-        <ul>
+        <h2 class="section-title">자격증</h2>
+        <ul class="contact-info">
             <li>공인중개사, 감정평가사</li>
         </ul>
-        <hr>
-        <p class="section-title">경력</p>
-        <ul>
+        <h2 class="section-title">경력</h2>
+        <ul class="contact-info">
             <li>재개발/재건축, 상속/증여 시가평가, 경매, 소송 등</li>
         </ul>
     </div>
